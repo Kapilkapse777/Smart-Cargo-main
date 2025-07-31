@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: cargo-exchange-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: cargo-exchange-db
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: FRONTEND_URL
+        value: https://your-frontend-app.onrender.com
+
+databases:
+  - name: cargo-exchange-db
+    plan: free
+    databaseName: cargo_exchange 
