@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚛 India Cargo Exchange Platform
 
 A smart cargo matching platform that connects transporters to optimize routes and reduce costs across India.
@@ -105,3 +106,6 @@ This platform is specifically designed for Indian logistics with:
 ## 📝 License
 
 MIT License 
+=======
+# Smart-Cargo-main
+>>>>>>> c6187ebedffb26f6db9bf7e61f09daa872328308
